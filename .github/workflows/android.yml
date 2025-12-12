@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Install Android SDK 21
+      run: sdkmanager "platforms;android-21"
     - name: set up JDK 8
       uses: actions/setup-java@v4
       with:
